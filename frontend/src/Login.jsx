@@ -17,6 +17,9 @@ export default function Login() {
       const response = await axios.post("http://localhost:8080/auth/login", { email, senha });
 
       if (response.status === 200) {
+        // Salvando a resposta completa no localStorage
+        localStorage.setItem("userData", JSON.stringify(response.data));
+  
         navigate("/welcome");
       }
     } catch (err) {

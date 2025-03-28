@@ -31,7 +31,7 @@ public class UsuarioController {
 
     @GetMapping("/testToken")
     public ResponseEntity<String> test(){
-        return new ResponseEntity<>("ok", HttpStatus.OK);
+        return new ResponseEntity<>("Você está autenticado!", HttpStatus.OK);
     }
 
 }
