@@ -14,7 +14,7 @@ export default function Login() {
     setError("");
 
     try {
-      const response = await axios.post("http://localhost:8080/login", { email, senha });
+      const response = await axios.post("http://localhost:8080/auth/login", { email, senha });
 
       if (response.status === 200) {
         navigate("/welcome");
