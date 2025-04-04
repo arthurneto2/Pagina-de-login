@@ -6,6 +6,6 @@ services:
     ports:
       - 5432:5432
     environment:
-      POSTGRES_USER: johnkaua
-      POSTGRES_PASSWORD: johnkaua
-      POSTGRES_DB: johnkaua
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: db_labprog
